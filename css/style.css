@@ -517,15 +517,18 @@ body {
 }
 
 .contact-container {
-    display: grid;
-    grid-template-columns: 1.5fr 1fr;
+    display: flex;
+    flex-direction: column;
     gap: 3rem;
     margin-top: 3rem;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .contact-info {
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 2rem;
 }
 
@@ -612,8 +615,7 @@ body {
     
     .features-grid,
     .pricing-grid,
-    .faq-grid,
-    .contact-container {
+    .faq-grid {
         grid-template-columns: 1fr;
     }
     
