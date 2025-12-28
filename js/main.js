@@ -73,4 +73,15 @@ document.querySelectorAll('.feature-card, .pricing-card').forEach(el => {
     observer.observe(el);
 });
 
+// Set current year in footer copyright
+document.addEventListener('DOMContentLoaded', function() {
+    const currentYear = new Date().getFullYear();
+    const copyrightElements = document.querySelectorAll('.footer-copyright, .footer-bottom p');
+    copyrightElements.forEach(el => {
+        if (el && el.textContent.includes('©')) {
+            el.textContent = `© ${currentYear} Wealth Path by Chingalo Family. All rights reserved.`;
+        }
+    });
+});
+
 console.log('Wealth Path website loaded successfully!');
