@@ -525,27 +525,64 @@ section .section-subtitle {
     transform: translateY(-3px);
 }
 
-/* Footer Contact Info */
+/* Footer Contact Info - Modern & Stylish */
 .contact-info-footer {
     list-style: none;
 }
 
 .contact-info-footer li {
     margin-bottom: 1.5rem;
-    color: rgba(255, 255, 255, 0.7);
-    line-height: 1.8;
+    padding: 1.25rem;
+    background: rgba(42, 173, 177, 0.1);
+    border-left: 3px solid var(--primary-light);
+    border-radius: 0.5rem;
+    transition: all 0.3s ease;
+}
+
+.contact-info-footer li:hover {
+    background: rgba(42, 173, 177, 0.15);
+    transform: translateX(5px);
+    border-left-color: var(--primary);
+    box-shadow: 0 4px 12px rgba(42, 173, 177, 0.2);
 }
 
 .contact-info-footer li i {
     color: var(--primary-light);
-    margin-right: 0.5rem;
-    font-size: 1.1rem;
+    margin-right: 0.75rem;
+    font-size: 1.25rem;
+    width: 30px;
+    height: 30px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(93, 193, 197, 0.2);
+    border-radius: 50%;
+    vertical-align: middle;
 }
 
 .contact-info-footer li strong {
+    display: inline-block;
+    color: var(--primary-light);
+    font-weight: 600;
+    font-size: 0.875rem;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    margin-bottom: 0.5rem;
+}
+
+.contact-info-footer li a,
+.contact-info-footer li span {
+    color: rgba(255, 255, 255, 0.9);
+    text-decoration: none;
+    font-size: 1rem;
+    line-height: 1.6;
     display: block;
-    color: white;
-    margin-bottom: 0.25rem;
+    margin-top: 0.25rem;
+}
+
+.contact-info-footer li a:hover {
+    color: var(--primary-light);
+    text-decoration: underline;
 }
 
 /* FAQ Section / Support Section */
