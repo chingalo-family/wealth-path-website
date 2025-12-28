@@ -96,7 +96,8 @@ body {
     transition: all 0.3s;
 }
 
-.nav-links a:hover {
+.nav-links a:hover,
+.nav-links a.current-page {
     color: var(--primary);
 }
 
@@ -513,4 +514,136 @@ body {
         flex-direction: column;
         align-items: center;
     }
+}
+
+/* Additional Pages Styles */
+.page-hero {
+    background: linear-gradient(135deg, #F0FEFF 0%, #E6F9FA 100%);
+    padding: 4rem 0;
+    text-align: center;
+}
+
+.page-hero h1 {
+    font-size: 2.5rem;
+    color: var(--gray-900);
+    margin-bottom: 1rem;
+}
+
+.page-hero h1 i {
+    color: var(--primary);
+    margin-right: 0.5rem;
+}
+
+.page-hero p {
+    font-size: 1.125rem;
+    color: var(--gray-500);
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.content-section {
+    padding: 4rem 0;
+}
+
+.content-section h2 {
+    font-size: 2rem;
+    color: var(--gray-900);
+    margin-bottom: 2rem;
+}
+
+.content-section h3 {
+    font-size: 1.5rem;
+    color: var(--gray-900);
+    margin: 2rem 0 1rem;
+}
+
+.content-section p {
+    color: var(--gray-500);
+    line-height: 1.8;
+    margin-bottom: 1rem;
+}
+
+.content-section ul {
+    color: var(--gray-500);
+    line-height: 1.8;
+    margin: 1rem 0 1rem 2rem;
+}
+
+.faq-item {
+    background: white;
+    border-radius: var(--radius);
+    padding: 1.5rem;
+    margin-bottom: 1rem;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.faq-item h3 {
+    color: var(--primary);
+    font-size: 1.125rem;
+    margin: 0 0 0.75rem 0;
+}
+
+.faq-item p {
+    margin: 0;
+}
+
+.contact-form {
+    max-width: 600px;
+    margin: 0 auto;
+    background: white;
+    padding: 2rem;
+    border-radius: var(--radius);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.form-group {
+    margin-bottom: 1.5rem;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+    color: var(--gray-900);
+    font-weight: 500;
+}
+
+.form-group input,
+.form-group textarea,
+.form-group select {
+    width: 100%;
+    padding: 0.75rem;
+    border: 1px solid var(--gray-100);
+    border-radius: var(--radius);
+    font-family: inherit;
+    font-size: 1rem;
+    transition: border-color 0.3s;
+}
+
+.form-group input:focus,
+.form-group textarea:focus,
+.form-group select:focus {
+    outline: none;
+    border-color: var(--primary);
+}
+
+.form-group textarea {
+    resize: vertical;
+    min-height: 150px;
+}
+
+.btn-submit {
+    background: var(--primary);
+    color: white;
+    border: none;
+    padding: 0.75rem 2rem;
+    border-radius: var(--radius);
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.3s;
+    width: 100%;
+}
+
+.btn-submit:hover {
+    background: var(--primary-dark);
 }
