@@ -688,11 +688,7 @@ section .section-subtitle {
     }
 }
 
-/* Mobile Menu Toggle Button */
-.mobile-menu-toggle {
-    display: none;
-}
-
+/* Mobile Menu Toggle Button - default hidden on desktop */
 @media (min-width: 769px) {
     .mobile-menu-toggle {
         display: none !important;
@@ -772,12 +768,25 @@ section .section-subtitle {
 
 .contact-form {
     width: 100%;
-    max-width: 1200px;
+    max-width: 90%;
     margin: 0 auto;
     background: white;
     padding: 3rem;
     border-radius: var(--radius);
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+@media (min-width: 1400px) {
+    .contact-form {
+        max-width: 85%;
+    }
+}
+
+@media (max-width: 768px) {
+    .contact-form {
+        max-width: 100%;
+        padding: 2rem 1.5rem;
+    }
 }
 
 .form-group {
