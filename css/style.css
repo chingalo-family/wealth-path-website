@@ -114,9 +114,38 @@ body {
     border-radius: var(--radius);
 }
 
+/* Section Styling - Consistent across all sections */
+section {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    padding: 4rem 0;
+}
+
+section h2 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: var(--gray-900);
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+section .section-subtitle {
+    font-size: 1.125rem;
+    color: var(--gray-500);
+    text-align: center;
+    margin-bottom: 3rem;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 /* Hero Section */
 .hero {
     background: linear-gradient(135deg, #F0FEFF 0%, #E6F9FA 100%);
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
     padding: 6rem 0;
     text-align: center;
 }
@@ -211,6 +240,9 @@ body {
 
 /* Features Section */
 .features {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
     padding: 6rem 0;
     background: white;
 }
@@ -271,6 +303,9 @@ body {
 
 /* Pricing Section */
 .pricing {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
     padding: 6rem 0;
     background: var(--gray-50);
 }
@@ -368,6 +403,9 @@ body {
 
 /* Download Section */
 .download {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
     padding: 6rem 0;
     background: white;
 }
@@ -510,7 +548,15 @@ body {
     margin-bottom: 0.25rem;
 }
 
-/* FAQ Section */
+/* FAQ Section / Support Section */
+.support-section {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    padding: 6rem 0;
+    background: white;
+}
+
 .faq-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -536,6 +582,10 @@ body {
 
 /* Contact Section */
 .contact-section {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    padding: 6rem 0;
     background: var(--gray-50);
 }
 
@@ -584,7 +634,27 @@ body {
         padding: 0.5rem;
     }
     
+    /* Adjust sections for mobile - allow scrolling if needed */
+    section {
+        min-height: auto;
+        padding: 3rem 0;
+    }
+    
+    .hero,
+    .features,
+    .pricing,
+    .download,
+    .support-section,
+    .contact-section {
+        min-height: auto;
+        padding: 3rem 0;
+    }
+    
     .hero h1 {
+        font-size: 2rem;
+    }
+    
+    section h2 {
         font-size: 2rem;
     }
     
