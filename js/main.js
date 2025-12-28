@@ -84,4 +84,38 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 });
 
+// Mobile menu toggle function
+function toggleMobileMenu() {
+    const navLinks = document.querySelector('.nav-links');
+    const toggleBtn = document.querySelector('.mobile-menu-toggle i');
+    
+    navLinks.classList.toggle('mobile-active');
+    
+    // Toggle icon between bars and times (X)
+    if (navLinks.classList.contains('mobile-active')) {
+        toggleBtn.classList.remove('fa-bars');
+        toggleBtn.classList.add('fa-times');
+    } else {
+        toggleBtn.classList.remove('fa-times');
+        toggleBtn.classList.add('fa-bars');
+    }
+}
+
+// Close mobile menu when clicking on a link
+document.addEventListener('DOMContentLoaded', function() {
+    const navLinks = document.querySelectorAll('.nav-links a');
+    navLinks.forEach(link => {
+        link.addEventListener('click', function() {
+            const navMenu = document.querySelector('.nav-links');
+            const toggleBtn = document.querySelector('.mobile-menu-toggle i');
+            
+            if (navMenu.classList.contains('mobile-active')) {
+                navMenu.classList.remove('mobile-active');
+                toggleBtn.classList.remove('fa-times');
+                toggleBtn.classList.add('fa-bars');
+            }
+        });
+    });
+});
+
 console.log('Wealth Path website loaded successfully!');

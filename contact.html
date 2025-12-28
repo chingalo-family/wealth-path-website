@@ -23,6 +23,9 @@
                 <img src="images/logo.svg" height="55" width="55" alt="Wealth Path" class="logo-img">
                 <span>Wealth Path</span>
             </div>
+            <button class="mobile-menu-toggle" onclick="toggleMobileMenu()">
+                <i class="fas fa-bars"></i>
+            </button>
             <ul class="nav-links">
                 <li><a href="index.html">Home</a></li>
                 <li><a href="index.html#features">Features</a></li>
@@ -45,7 +48,12 @@
     <!-- Contact Form Section -->
     <section class="content-section">
         <div class="container">
-            <form class="contact-form" action="#" method="POST">
+            <form class="contact-form" action="https://formsubmit.co/chingalo.family@gmail.com" method="POST">
+                <!-- FormSubmit Configuration -->
+                <input type="hidden" name="_subject" value="New Contact Form Submission - Wealth Path">
+                <input type="hidden" name="_captcha" value="false">
+                <input type="hidden" name="_template" value="table">
+                
                 <div class="form-group">
                     <label for="name"><i class="fas fa-user"></i> Full Name *</label>
                     <input type="text" id="name" name="name" required placeholder="John Doe">
@@ -87,10 +95,10 @@
             <div style="text-align: center; margin-top: 3rem;">
                 <h3 style="color: var(--gray-900); margin-bottom: 1rem;">Other Ways to Reach Us</h3>
                 <p style="color: var(--gray-500); margin-bottom: 0.5rem;">
-                    <i class="fas fa-envelope" style="color: var(--primary);"></i> Email: support@wealthpath.co.tz
+                    <i class="fas fa-envelope" style="color: var(--primary);"></i> Email: chingalo.family@gmail.com
                 </p>
                 <p style="color: var(--gray-500); margin-bottom: 0.5rem;">
-                    <i class="fas fa-phone" style="color: var(--primary);"></i> Phone: +255 XXX XXX XXX
+                    <i class="fas fa-phone" style="color: var(--primary);"></i> Phone: +255 687 168 637
                 </p>
                 <p style="color: var(--gray-500);">
                     <i class="fas fa-clock" style="color: var(--primary);"></i> Business Hours: Mon-Fri, 9:00 AM - 5:00 PM (EAT)
