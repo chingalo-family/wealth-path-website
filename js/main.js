@@ -22,6 +22,35 @@ window.addEventListener('scroll', function() {
     }
 });
 
+// Active navigation link based on scroll position
+function updateActiveNavLink() {
+    const sections = document.querySelectorAll('section[id]');
+    const navLinks = document.querySelectorAll('.nav-links a[href^="#"]');
+    
+    let currentSection = '';
+    
+    sections.forEach(section => {
+        const sectionTop = section.offsetTop;
+        const sectionHeight = section.clientHeight;
+        if (window.scrollY >= (sectionTop - 100)) {
+            currentSection = section.getAttribute('id');
+        }
+    });
+    
+    navLinks.forEach(link => {
+        link.classList.remove('active');
+        if (link.getAttribute('href') === `#${currentSection}`) {
+            link.classList.add('active');
+        }
+    });
+}
+
+// Update active link on scroll
+window.addEventListener('scroll', updateActiveNavLink);
+
+// Update active link on page load
+document.addEventListener('DOMContentLoaded', updateActiveNavLink);
+
 // Animate elements on scroll
 const observerOptions = {
     threshold: 0.1,

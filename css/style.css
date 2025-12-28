@@ -93,11 +93,18 @@ body {
     text-decoration: none;
     color: var(--gray-900);
     font-weight: 500;
-    transition: color 0.3s;
+    transition: all 0.3s;
 }
 
 .nav-links a:hover {
     color: var(--primary);
+}
+
+.nav-links a.active {
+    background: var(--primary);
+    color: white;
+    padding: 0.5rem 1.5rem;
+    border-radius: var(--radius);
 }
 
 .btn-download {
