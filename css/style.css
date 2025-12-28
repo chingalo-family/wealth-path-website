@@ -107,19 +107,6 @@ body {
     border-radius: var(--radius);
 }
 
-.btn-download {
-    background: var(--primary);
-    color: white;
-    padding: 0.5rem 1.5rem;
-    border-radius: var(--radius);
-    transition: background 0.3s;
-}
-
-.btn-download:hover {
-    background: var(--primary-dark);
-    color: white;
-}
-
 /* Hero Section */
 .hero {
     background: linear-gradient(135deg, #F0FEFF 0%, #E6F9FA 100%);
