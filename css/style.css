@@ -414,6 +414,16 @@ body {
     color: var(--gray-500);
 }
 
+.download-btn.coming-soon {
+    background: var(--gray-500);
+    opacity: 0.6;
+    cursor: not-allowed;
+}
+
+.download-btn.coming-soon:hover {
+    transform: none;
+}
+
 /* Footer */
 .footer {
     background: var(--gray-900);
