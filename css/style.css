@@ -473,7 +473,7 @@ body {
 .social-links a {
     width: 40px;
     height: 40px;
-    background: var(--primary);
+    background: #86DCD2;
     color: white;
     display: flex;
     align-items: center;
@@ -483,7 +483,7 @@ body {
 }
 
 .social-links a:hover {
-    background: var(--primary-dark);
+    background: var(--primary);
     transform: translateY(-3px);
 }
 
