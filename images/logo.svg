@@ -1,0 +1,22 @@
+<svg width="512" height="512" viewBox="0 0 512 512" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Rounded square background -->
+  <rect width="512" height="512" rx="115" fill="#2AADB1"/>
+  
+  <!-- Chart line icon -->
+  <g transform="translate(80, 200)">
+    <!-- Line chart points and connections -->
+    <circle cx="40" cy="120" r="20" fill="white"/>
+    <circle cx="140" cy="60" r="20" fill="white"/>
+    <circle cx="240" cy="100" r="20" fill="white"/>
+    <line x1="40" y1="120" x2="140" y2="60" stroke="white" stroke-width="12" stroke-linecap="round"/>
+    <line x1="140" y1="60" x2="240" y2="100" stroke="white" stroke-width="12" stroke-linecap="round"/>
+  </g>
+  
+  <!-- Dollar sign pin marker -->
+  <g transform="translate(280, 80)">
+    <!-- Pin shape -->
+    <path d="M 60 0 C 26.8 0 0 26.8 0 60 C 0 105 60 140 60 140 C 60 140 120 105 120 60 C 120 26.8 93.2 0 60 0 Z" fill="white"/>
+    <!-- Dollar sign -->
+    <text x="60" y="75" font-family="Arial, sans-serif" font-size="60" font-weight="bold" fill="#2AADB1" text-anchor="middle">$</text>
+  </g>
+</svg>

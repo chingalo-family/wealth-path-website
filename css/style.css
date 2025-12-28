@@ -77,6 +77,11 @@ body {
     color: var(--primary);
 }
 
+.logo-img {
+    height: 2.5rem;
+    width: auto;
+}
+
 .nav-links {
     display: flex;
     list-style: none;
